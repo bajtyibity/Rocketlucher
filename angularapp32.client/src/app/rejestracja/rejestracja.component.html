@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cetus Food - Rejestracja</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    .register-container {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+      .logo img {
+        width: 80px;
+      }
+
+      .logo h1 {
+        margin: 0;
+        font-size: 24px;
+      }
+
+      .logo h2 {
+        margin: 0;
+        font-size: 18px;
+        color: #888;
+      }
+
+    .register-container input {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .register-container button {
+      width: 100%;
+      padding: 10px;
+      background-color: #ff4b4b;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+      .register-container button:hover {
+        background-color: #ff1c1c;
+      }
+
+    .icons {
+      margin-bottom: 20px;
+    }
+
+      .icons img {
+        width: 40px;
+        margin: 5px;
+      }
+  </style>
+</head>
+<body>
+  <div class="register-container">
+    <div class="icons">
+      <img src="https://via.placeholder.com/40" alt="icon">
+      <img src="https://via.placeholder.com/40" alt="icon">
+      <img src="https://via.placeholder.com/40" alt="icon">
+      <img src="https://via.placeholder.com/40" alt="icon">
+      <img src="https://via.placeholder.com/40" alt="icon">
+      <img src="https://via.placeholder.com/40" alt="icon">
+      <img src="https://via.placeholder.com/40" alt="icon">
+      <img src="https://via.placeholder.com/40" alt="icon">
+    </div>
+    <div class="logo">
+      <img src="https://via.placeholder.com/80" alt="Cetus Food Logo">
+      <h1>cetus<span style="color: blue;">food</span></h1>
+    </div>
+    <h2>Rejestracja</h2>
+    <form action="/register" method="POST">
+      <input type="email" name="email" placeholder="Adres e-mail" required>
+      <input type="tel" name="phone" placeholder="Nr. telefonu (opcjonalnie)">
+      <input type="password" name="password" placeholder="Hasło" required>
+      <input type="password" name="confirm-password" placeholder="Potwierdź hasło" required>
+      <button type="submit">Zarejestruj</button>
+    </form>
+  </div>
+</body>
+</html>
